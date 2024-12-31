@@ -447,7 +447,7 @@ const sendEmail = async (name, email, token) => {
             from: "hafizmominhussain222@gmail.com",
             to: email,
             subject: "for reset password",
-            html: `<p>hi ${name} ,please copy this link <a href='http://localhost:9000/resetpassword.html?token=${token}'>reset password</a> `
+            html: `<p>hi ${name} ,please copy this link <a href='user-info-git-main-hafizmominhussain222-gmailcoms-projects.vercel.app/resetpassword.html?token=${token}'>reset password</a> `
         }
         transporter.sendMail(mailOption, (error, info) => {
             if (error) {
