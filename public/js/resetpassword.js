@@ -23,14 +23,14 @@ submit.addEventListener("click", () => {
     }
 
 
-    axios.post(`http://localhost:9000/resetpassword/?token=${token}`, {
+    axios.post(`user-info-git-main-hafizmominhussain222-gmailcoms-projects.vercel.app/resetpassword/?token=${token}`, {
         password: password
     })
         .then(function (res) {
             alert(res.data.message);  
             console.log(res.data);
             if (res.data.message === "Password updated successfully"){
-                window.location.href = "http://localhost:9000/login.html"; 
+                window.location.href = "user-info-git-main-hafizmominhussain222-gmailcoms-projects.vercel.app/login.html"; 
             }
         })
         .catch(function (error) {
