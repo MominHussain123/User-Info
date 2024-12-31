@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook profile</title>
+    <link rel="stylesheet" href="./style/facebookProfile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo_icon">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="nav_search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="search facebook">
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <div class="icon_box active">
+                <a href="#"><i class="fa-solid fa-house"></i></a>
+            </div>
+            <div class="icon_box">
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+            </div>
+            <div class="icon_box">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="icon_box">
+                <a href="#"><i class="fa-solid fa-users"></i></a>
+            </div>
+            <div class="icon_box">
+                <a href="#"><i class="fa-solid fa-gamepad"></i></a>
+            </div>
+        </nav>
+
+        <div class="icons">
+            <div class="i_div"><i class='bx bxs-grid'></i></div>
+            <div class="i_div"><i class="fa-brands fa-facebook-messenger"></i></div>
+            <div class="i_div"><i class="fa-solid fa-bell"></i></div>
+            <div class="bars">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="search_bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </header>
+    <section class="profile" id="profile">
+        <div class="container">
+            <div class="banner">
+                <img src="./images/main image.jpg" alt="">
+            </div>
+            <div class="pro-bottom">
+                <div class="Pro-image">
+                    <img src="" alt="Profile Image" class="ProfileImage">
+                </div>
+                <h1 class="name">Momin hussain</h1>
+            </div>
+        </div>
+    </section>
+    <section class="UserPost" id="UserPost">
+        <div class="container">
+            <div class="post-box">
+                <div class="top-pro">
+                    <img src="" alt="profile Image" class="ProfileImage">
+                    <h4 class="setfullName">Momin hussain</h4>
+                </div>
+
+                <video src="./videos/236893.mp4" controls audio></video>
+
+                
+                <div class="bottom-pro">
+                    <div class="likediv"><i class="fa-solid fa-thumbs-up"></i> <p class="name"></p></div>
+                    <div class="link">
+                        <button class="like"><i class="fa-solid fa-thumbs-up"></i>Like</button>
+                        <button class="comment"><i class="fa-solid fa-comment"></i>Comment</button>
+                    </div>
+                    <div class="comment">
+                        <img src="" alt="profileImage" class="ProfileImage">
+                        <div class="input-box">
+                            <input type="text" placeholder="Comment">
+                            <button><i class="fa-regular fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/facebookProfile.js"></script>
+</body>
+</html>

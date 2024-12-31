@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page logic before & after</title>
+    <link rel="stylesheet" href="./style/todoList.css">
+</head>
+
+<body>
+    <a href="./index.html" class="homebtn">Home page</a>
+    <div class="container">
+        <div class="todo">
+            <div class="row">
+                <h1>Todo List </h1>
+                <div class="right">
+                    <p class="setfullName">
+                    </p>
+                    <p class="setemail">
+                    </p>
+                </div>
+            </div>
+            <div class="add-Input">
+                <input type="text" name="" id="input" placeholder="Add Task">
+                <button onclick="addItem()">Add</button>
+            </div>
+
+            <ul id="list-item">
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/todoList.js"></script>
+
+</body>
+</html>
