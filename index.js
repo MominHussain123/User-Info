@@ -12,7 +12,6 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use(body_parser.json());
 app.use(routs); 
 
-app.use(cors())
 const db = process.env.MONGODB_URL;
 mongoose.connect(db).then(() => {
     console.log("Connected");
@@ -20,6 +19,10 @@ mongoose.connect(db).then(() => {
     console.log("Not connect " + err);
 });
 const port = process.env.PORT;
+app.use(cors({
+    origin:"*",
+    withCredentials:true,
+}))
 app.listen(port,()=>{
     console.log("Server is riunning on PORT", port);
 });
