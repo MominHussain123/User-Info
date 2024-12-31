@@ -12,7 +12,7 @@
 const Id = localStorage.getItem('id');
 console.log(Id);
 
-    axios.get(`http://localhost:9000/profileget/${Id}`)
+    axios.get(`user-info-git-main-hafizmominhussain222-gmailcoms-projects.vercel.app/profileget/${Id}`)
         .then((res)=>{
             const userData = res.data;
             console.log(userData);    
