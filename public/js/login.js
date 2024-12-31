@@ -11,7 +11,7 @@ submit.addEventListener("click", () => {
         return alert("Fill your form")
     } else {
 
-    axios.post('http://localhost:9000/login', {
+    axios.post('user-info-git-main-hafizmominhussain222-gmailcoms-projects.vercel.app/login', {
         email: email,
         password: password
     })
