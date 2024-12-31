@@ -4,7 +4,7 @@
 const Id = localStorage.getItem('id');
 console.log(Id);
 
-axios.get(`http://localhost:9000/profileget/${Id}`)
+axios.get(`user-info-git-main-hafizmominhussain222-gmailcoms-projects.vercel.app/profileget/${Id}`)
 .then((resp) => {
     console.log(resp.data);
     const images = document.querySelectorAll(".ProfileImage");
