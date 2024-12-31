@@ -26,7 +26,7 @@ const userId = localStorage.getItem('id')
 if (userId) {
 
     const img = document.getElementById("img");
-    axios.get(`http://localhost:9000/profileget/${userId}`)
+    axios.get(`user-info-git-main-hafizmominhussain222-gmailcoms-projects.vercel.app/profileget/${userId}`)
         .then((res) => {
             const userData = res.data;
             console.log(userData);
