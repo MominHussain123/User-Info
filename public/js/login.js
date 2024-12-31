@@ -23,7 +23,7 @@ submit.addEventListener("click", () => {
                 let userId =res.data.data._id;
                 localStorage.setItem("token",res.data.token);
                 localStorage.setItem("id",userId);
-                window.location.href = `http://localhost:9000/profile.html`;  
+                window.location.href = `user-info-git-main-hafizmominhussain222-gmailcoms-projects.vercel.app/profile.html`;  
             } else {
                 console.log(res.data)
                 alert(res.data)
