@@ -5,7 +5,7 @@ submit.addEventListener("click", () => {
     if (email === "") {
         alert("fill your input")
     } else {
-        axios.post('http://localhost:9000/forgotpassword', {
+        axios.post('user-info-git-main-hafizmominhussain222-gmailcoms-projects.vercel.app/forgotpassword', {
             email: email,
         })
             .then(function (res) {
