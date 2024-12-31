@@ -2,7 +2,7 @@
 
 const dataget = () => {
     const token = localStorage.getItem('token');
-    axios.get('http://localhost:9000/getalltodo')
+    axios.get('user-info-git-main-hafizmominhussain222-gmailcoms-projects.vercel.app/getalltodo')
         .then((res) => {
             console.log(res.data);
 
@@ -52,7 +52,7 @@ const getEmailInInput = (id,email) => {
 
 const Update = (id) => {
     const todo = document.getElementById("editVal").value;
-    axios.put('http://localhost:9000/todoupdate/' + id, {
+    axios.put('user-info-git-main-hafizmominhussain222-gmailcoms-projects.vercel.app/todoupdate/' + id, {
         todo:todo 
     }).then((res)=>{
         console.log(res.data.message);
@@ -70,7 +70,7 @@ const Update = (id) => {
     // dataget()
 const deleData = (id) => {
     console.log(id);
-    axios.delete('http://localhost:9000/tododelete/' + id)
+    axios.delete('user-info-git-main-hafizmominhussain222-gmailcoms-projects.vercel.app/tododelete/' + id)
         .then((resp) => {
             console.log(resp);
             alert(resp.data.message)
@@ -94,7 +94,7 @@ const addItem = async () => {
     if (input.value === "") {
         alert("Enter your text in input")
     } else {
-        await axios.post('http://localhost:9000/todoadd', {
+        await axios.post('user-info-git-main-hafizmominhussain222-gmailcoms-projects.vercel.app/todoadd', {
             todo: input.value
         })
             .then((resp) => {
@@ -112,7 +112,7 @@ const addItem = async () => {
 const getVal = ()=>{
     const Id = localStorage.getItem('id');
     console.log(Id);
-    axios.get(`http://localhost:9000/profileget/${Id}`)
+    axios.get(`user-info-git-main-hafizmominhussain222-gmailcoms-projects.vercel.app/profileget/${Id}`)
         .then((res) => {
             const userData = res.data;
             console.log(userData);
