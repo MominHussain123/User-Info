@@ -12,10 +12,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use(body_parser.json());
 app.use(routs); 
 
-app.use(cors({
-    origin:"*",
-    withCredentials:true,
-}))
+app.use(cors())
 const db = process.env.MONGODB_URL;
 mongoose.connect(db).then(() => {
     console.log("Connected");
