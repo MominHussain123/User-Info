@@ -307,12 +307,6 @@ hgroup {
         display: grid;
     }
 
-    .icons .btn {
-        position: absolute;
-        top: 50vh;
-        right: 0;
-        border-radius: 0;
-    }
 
     hgroup {
         text-align: center;
