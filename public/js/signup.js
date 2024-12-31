@@ -26,7 +26,7 @@ submit.addEventListener("click", () => {
         formData.append("Dateofbirth", Dateofbirth);
         formData.append("Country", country);
         formData.append("city", city);
-        axios.post('http://localhost:9000/signup', formData, {
+        axios.post('user-info-git-main-hafizmominhussain222-gmailcoms-projects.vercel.app/signup', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data',
             },
@@ -38,7 +38,7 @@ submit.addEventListener("click", () => {
                 if (res.data.message === "User registered successfully") {
                     console.log(res.data.message);
                     alert(res.data.message);
-                    window.location.href = "http://localhost:9000/login.html";
+                    window.location.href = "user-info-git-main-hafizmominhussain222-gmailcoms-projects.vercel.app/login.html";
                 } else {
                     alert(res.data)
                     console.log(res.data)
